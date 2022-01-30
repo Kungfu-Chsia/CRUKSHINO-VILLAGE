@@ -1,0 +1,26 @@
+.contacts {
+  width: 100%;
+  background-color: $background-blue;
+  color: $white;
+}
+
+.contacts__list {
+  @include list-style;
+}
+
+.contacts__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  &--color {
+    color: $yellow;
+    font-weight: 600;
+  }
+}
+
+.contacts__link {
+  font-size: 24px;
+  line-height: 29px;
+  color: $white;
+}
