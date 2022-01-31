@@ -4,18 +4,35 @@
   color: $white;
 }
 
+.contacts-header {
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+
 .contacts__list {
   @include list-style;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+.contacts__item {
+  margin-right: 6px;
 }
 
 .contacts__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  padding-bottom: 3px;
 
   &--color {
     color: $yellow;
     font-weight: 600;
+  }
+  &--shedule {
+    padding-top: 2px;
+    padding-bottom: 20px;
   }
 }
 
