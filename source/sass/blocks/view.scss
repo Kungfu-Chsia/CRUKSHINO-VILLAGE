@@ -1,0 +1,97 @@
+.view__wrap {
+  background-color: $header-blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.view__title {
+  font-family: 'Neumann';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 52px;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, $white, $yellow);
+  color:transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.view__price {
+  font-family: Neumann;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: $white;
+  margin-bottom: 40px
+}
+
+.view__input {
+  background: #FFFFFF;
+  box-shadow: inset 0px 2px 0px #EBEBEB;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  padding: 26px 39px 25px 39px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  width: 100%;
+  margin-bottom: 15px;
+
+&::placeholder {
+  color: $placeholder-grey;
+  text-align: start;
+  }
+}
+
+.view__calendar {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $button-color;
+  background: radial-gradient(31.58% 218.14% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(92.7deg, #E9C878 0%, #C1A050 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  border-radius: 220px;
+  padding: 33px 66px 30px 121px;
+  position: relative;
+  margin-bottom: 32px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 25px;
+    left: 66px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons/calendar.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.view__rules {
+  font-weight: 300;
+font-size: 12px;
+line-height: 18px;
+text-align: center;
+color: $white;
+opacity: 0.7;
+margin-bottom: 50px;
+
+  & a {
+    color: $white;
+    opacity: 0.7;
+  }
+}

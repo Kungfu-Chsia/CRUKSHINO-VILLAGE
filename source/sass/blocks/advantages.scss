@@ -1,0 +1,122 @@
+.advantages {
+  background-color: $background-grey;
+}
+
+.advantages__description {
+  text-align: center;
+}
+
+.advantages__header {
+  padding-bottom: 5px;
+  padding-top: 50px;
+  font-size: 35px;
+  line-height: 52px;
+}
+
+.advantages__title {
+  padding-bottom: 35px;
+  font-size: 25px;
+  line-height: 37px;
+}
+
+.advantages__text {
+  padding-bottom: 30px;
+}
+
+.advantages__list {
+  @include list-style;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #EBEBEB;
+  box-sizing: border-box;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.advantages__number {
+  font-family: Neumann;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 29px;
+  color: $yellow;
+  padding-left: 20px;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.advantages__feature {
+  font-size: 18px;
+  line-height: 26px;
+  position: relative;
+  padding-top: 96px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: -3px;
+    left: 50%;
+    width: 93px;
+    height: 90px;
+    transform: translate(-50%);
+  }
+}
+
+.icon-house::before {
+  background: url(../img/icons/house.svg) no-repeat center center;
+}
+
+.icon-bill::before {
+  background: url(../img/icons/bill.svg) no-repeat center center;
+}
+
+.icon-car::before {
+  background: url(../img/icons/car.svg) no-repeat center center;
+}
+
+.icon-address::before {
+  background: url(../img/icons/address.svg) no-repeat center center;
+}
+
+.icon-sourses::before {
+  background: url(../img/icons/sourses.svg) no-repeat center center;
+}
+
+.icon-brick::before {
+  background: url(../img/icons/bricks.svg) no-repeat center center;
+}
+
+.icon-plate::before {
+  background: url(../img/icons/plate.svg) no-repeat center center;
+}
+
+.icon-plan::before {
+  background: url(../img/icons/plan.svg) no-repeat center center;
+}
+
+.icon-window::before {
+  background: url(../img/icons/window.svg) no-repeat center center;
+}
+
+.icon-convector::before {
+  background: url(../img/icons/convector.svg) no-repeat center center;
+}
+
+.icon-plumbing::before {
+  background: url(../img/icons/plumbing.svg) no-repeat center center;
+}
+
+.icon-wall::before {
+  background: url(../img/icons/wall.svg) no-repeat center center;
+}
+
+.icon-ceram-block::before {
+  background: url(../img/icons/ceram-block.svg) no-repeat center center;
+}

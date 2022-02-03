@@ -1,0 +1,100 @@
+.walk__header {
+  font-family: 'Neumann';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 52px;
+  text-align: center;
+  color: $font-color;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+.walk__wrapper {
+  padding: 0 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.walk__button {
+  font-family: 'MuseoSansCyrl-700';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $font-color;
+  border: 2px solid#C1A050;
+  padding: 18px 40px 18px 41px;
+  border-radius: 220px;
+  background-color: $white;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.walk__slider-header {
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.walk__buttons-item {
+  background-color: $button-blue;
+  width: 50px;
+  height: 50px;
+  border-radius: 115px;
+  border: none;
+
+  &:hover {
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+
+  &--next {
+    opacity: 0.3;
+  }
+}
+
+.walk__slider-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.walk__slider-wrap {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.walk__slider-control {
+  position: absolute;
+  bottom: 23px;
+  left: 50%;
+  z-index: 20;
+  display: flex;
+  // width: 32px;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  align-items: center;
+  border: none;
+
+  & button {
+    padding: 0;
+    width: 6px;
+    height: 6px;
+    background-color: $black;
+    border: 2px solid $black;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 6px;
+  }
+
+  & .current {
+    background-color: $button-blue;
+    border: 2px solid $button-blue;
+    width: 10px;
+    height: 10px;
+  }
+}
