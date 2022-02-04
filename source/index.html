@@ -92,67 +92,70 @@
     <main>
       <section class="choosing-cottage">
         <div class="container">
-          <div class="">
+
             <div class="choosing-cottage__wrapper">
               <h1 class="visually-hidden">Выбор коттеджа</h1>
               <a class="choosing-cottage__link" href="catalog.html">К выбору коттеджей</a>
             </div>
+          <div class="choosing-cottage__container">
             <div class="choosing-cottage__wrap">
               <h2 class="choosing-cottage__header">Коттедж 145</h2>
+            </div>
+
+            <div class="choosing-cottage__wrap-list">
+              <ul class="choosing-cottage__list">
+                <li class="choosing-cottage__item">
+                  <p class="choosing-cottage__property">Стоимость</p>
+                  <span class="choosing-cottage__amount">по запросу</span>
+                </li>
+                <li class="choosing-cottage__item">
+                  <p class="choosing-cottage__property">площадь участка, соток</p>
+                  <span class="choosing-cottage__amount">6,60</span>
+                </li>
+                </ul>
+                <ul class="choosing-cottage__list">
+                <li class="choosing-cottage__item">
+                  <p class="choosing-cottage__property">площадь коттеджа</p>
+                  <span class="choosing-cottage__amount">175 м2</span>
+                </li>
+                <li class="choosing-cottage__item">
+                  <p class="choosing-cottage__property">корпус</p>
+                  <span class="choosing-cottage__amount">145</span>
+                </li>
+              </ul>
+            </div>
+            <div class="choosing-cottage__feature">
+              <p class="choosing-cottage__features">Особенности</p>
+              <a class="choosing-cottage__feature-description" href="#">WhiteBox</a>
             </div>
             <div class="choosing-cottage__wrap-button">
               <button class="choosing-cottage__button" type="button">Оставить заявку</button>
             </div>
-
-          <div class="choosing-cottage__wrap-list">
-            <ul class="choosing-cottage__list">
-              <li class="choosing-cottage__item">
-                <p class="choosing-cottage__property">Стоимость</p>
-                <span class="choosing-cottage__amount">по запросу</span>
-              </li>
-              <li class="choosing-cottage__item">
-                <p class="choosing-cottage__property">площадь участка, соток</p>
-                <span class="choosing-cottage__amount">6,60</span>
-              </li>
-              </ul>
-              <ul class="choosing-cottage__list">
-              <li class="choosing-cottage__item">
-                <p class="choosing-cottage__property">площадь коттеджа</p>
-                <span class="choosing-cottage__amount">175 м2</span>
-              </li>
-              <li class="choosing-cottage__item">
-                <p class="choosing-cottage__property">корпус</p>
-                <span class="choosing-cottage__amount">145</span>
-              </li>
-            </ul>
           </div>
-          <div class="choosing-cottage__feature">
-            <p class="choosing-cottage__features">Особенности</p>
-            <a class="choosing-cottage__feature-description" href="#">WhiteBox</a>
-          </div>
-        </div>
           <div class="choosing-cottage__wrap-img">
             <img class="choosing-cottage__img" src="img/home001.jpg" width="360" height="265" alt="Home №1" />
-            <div class="choosing-cottage__floor">
-              <p class="choosing-cottage__floor-number">1<span>этаж</span></p>
-              <p class="choosing-cottage__floor-number">2<span>этаж</span></p>
-            </div>
-            <div class="choosing-cottage__plan">
-              <img class="choosing-cottage__plan-img" src="img/arch-home001.png" width="328" height="328" alt="Home №1" />
-            </div>
-            <div class="choosing-cottage__plan-wrap">
-              <ul class="choosing-cottage__plan-list">
-                <li class="choosing-cottage__plan-item">
-                  <p class="choosing-cottage__plan-description icon-energy">ВСЕ ДЕЙСТВУЮЩИЕ КОММУНИКАЦИИ</p>
-                </li>
-                <li class="choosing-cottage__plan-item">
-                  <p class="choosing-cottage__plan-description icon-garage">НАВЕС ДЛЯ МАШИНЫ</p>
-                </li>
-                <li class="choosing-cottage__plan-item">
-                  <p class="choosing-cottage__plan-description icon-sert">ОФОРМЛЕНА СОБСТВЕННОСТЬ НА ДОМ</p>
-                </li>
-              </ul>
-            </div>
+              <div class="choosing-cottage__maket">
+                <div class="choosing-cottage__floor">
+                  <p class="choosing-cottage__floor-number">1<span>этаж</span></p>
+                  <p class="choosing-cottage__floor-number">2<span>этаж</span></p>
+                </div>
+                <div class="choosing-cottage__plan">
+                  <img class="choosing-cottage__plan-img" src="img/arch-home001.png" width="328" height="328" alt="Home №1" />
+                </div>
+                <div class="choosing-cottage__plan-wrap">
+                  <ul class="choosing-cottage__plan-list">
+                    <li class="choosing-cottage__plan-item">
+                      <p class="choosing-cottage__plan-description icon-energy">ВСЕ ДЕЙСТВУЮЩИЕ КОММУНИКАЦИИ</p>
+                    </li>
+                    <li class="choosing-cottage__plan-item">
+                      <p class="choosing-cottage__plan-description icon-garage">НАВЕС ДЛЯ МАШИНЫ</p>
+                    </li>
+                    <li class="choosing-cottage__plan-item">
+                      <p class="choosing-cottage__plan-description icon-sert">ОФОРМЛЕНА СОБСТВЕННОСТЬ НА ДОМ</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
           </div>
         </div>
       </section>
@@ -165,7 +168,9 @@
           </div>
         </div>
           <div class="walk__slider">
-            <img class="walk__img" src="img/showroom.png" width="360" height="180" alt="обзор коттеджа" />
+            <div class="walk__img-wrap">
+              <img class="walk__img" src="img/showroom.png" width="360" height="180" alt="обзор коттеджа" />
+            </div>
             <div class="container">
               <div class="walk__slider-wrap">
                 <h3 class="walk__slider-header">Шоурум коттеджа 175 кв.м</h3>
@@ -186,6 +191,7 @@
 
       <section class="advantages">
         <div class="container">
+          <div class="advantages__description-wrap">
           <div class="advantages__description">
             <h2 class="advantages__header">Преимущества</h2>
             <h3 class="advantages__title">вашего нового дома</h3>
@@ -195,6 +201,7 @@
           <div class="advantages__img">
             <img src="img/village.png" width="328" height="394" alt="коллаж из фото поселка" />
           </div>
+        </div>
           <div class="advantages__wrap">
             <ul class="advantages__list">
               <li class="advantages__item">

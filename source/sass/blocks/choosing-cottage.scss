@@ -1,9 +1,24 @@
 .choosing-cottage {
   background-color: $background-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $background-violet;
+  }
 }
 
 .choosing-cottage__wrap-button {
-  order: 5;
+  @media (min-width: $desktop-width) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+}
+
+.choosing-cottage__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr auto;
+  }
 }
 
 .choosing-cottage__link {
@@ -19,6 +34,10 @@
   margin-bottom: 42px;
   display: block;
 
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+
   &::before {
   content: '';
     position: absolute;
@@ -27,6 +46,10 @@
     width: 32px;
     height: 32px;
     background-image: url(../img/icons/left.svg);
+
+    @media (min-width: $desktop-width) {
+      background-image: url(../img/icons/left-grey.svg);
+    }
   }
 }
 
@@ -35,6 +58,14 @@
   line-height: 52px;
   color: $header-blue;
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+    font-size: 45px;
+    line-height: 66px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
 }
 
 .choosing-cottage__button {
@@ -52,6 +83,7 @@
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.25);
   position: relative;
   cursor: pointer;
+  margin-bottom: 52px;
 
   &::before {
     content: '';
@@ -63,6 +95,10 @@
     background-image: url(../img/icons/phone.svg);
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 92px;
+  }
 }
 
 .choosing-cottage__list {
@@ -71,10 +107,16 @@
   flex-direction: column;
   width: 156px;
   margin-right: 16px;
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
 }
 
 .choosing-cottage__wrap-list {
   display: flex;
+  padding-right: 195px;
 }
 
 .choosing-cottage__property {
@@ -83,6 +125,15 @@
   line-height: 14px;
   opacity: 0.7;
   padding-bottom: 3px;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.7);
+    padding-right: 30px;
+    min-width: max-content;
+  }
 }
 
 .choosing-cottage__amount {
@@ -91,6 +142,14 @@
   line-height: 24px;
   margin-bottom: 20px;
   display: block;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: $white;
+    margin-bottom: 40px;
+  }
 }
 
 .choosing-cottage__feature {
@@ -101,6 +160,10 @@
   margin-bottom: 35px;
   max-width: max-content;
 
+  @media (min-width: $desktop-width) {
+    height: min-content;
+  }
+
   & p {
     font-weight: 600;
     font-size: 14px;
@@ -109,6 +172,9 @@
     text-transform: uppercase;
     padding: 12px 26px 11px 26px;
 
+    @media (min-width: $desktop-width) {
+      padding: 14px 53px 14px 20px;
+    }
   }
 }
 
@@ -140,11 +206,19 @@
 
 .choosing-cottage__img {
   width: auto;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .choosing-cottage__floor {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .choosing-cottage__floor-number {
@@ -212,6 +286,11 @@
     left: 0px;
     width: 50px;
     height: 50px;
+
+    @media (min-width: $desktop-width) {
+      top: -74px;
+      left: 50%;
+    }
   }
 }
 
@@ -223,6 +302,10 @@
 .icon-garage::before {
   background: url(../img/icons/garage.svg) no-repeat center bottom;
   top: -15px;
+
+  @media (min-width: $desktop-width) {
+    top: -78px;
+    }
 }
 
 .icon-sert::before {
@@ -234,5 +317,24 @@
 
   &:not(:last-child) {
     padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 80%;
+  }
+}
+
+.choosing-cottage__maket {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.choosing-cottage__plan-img {
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 570px;
   }
 }

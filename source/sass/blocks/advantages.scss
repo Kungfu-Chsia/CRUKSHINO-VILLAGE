@@ -6,6 +6,12 @@
   text-align: center;
 }
 
+.advantages__description-wrap {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .advantages__header {
   padding-bottom: 5px;
   padding-top: 50px;
@@ -27,6 +33,12 @@
   @include list-style;
   display: grid;
   grid-template-columns: auto;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .advantages__item {
