@@ -5,6 +5,11 @@
 
   @media (min-width: $desktop-width) {
     background-color: $background-violet;
+
+    &--footer {
+      background-color: $background-blue;
+      padding-bottom: 45px;
+    }
   }
 }
 
